@@ -29,8 +29,8 @@ void printAverage()
 
     cout << "# of Student: " << numOfStudent << endl;
     cout << "Midterm Average: " << midtermAvg << endl;
-    cout << "Midterm Average: " << finalAvg << endl;;
-    cout << "Midterm Average: " << totalAvg << endl;;
+    cout << "Final Average: " << finalAvg << endl;;
+    cout << "Total Average: " << totalAvg << endl;;
 }
 
 void printStudentList(){
@@ -44,28 +44,28 @@ void doNamespaceTest(){
     cout << "Namespace Test" << endl;
 
     // 정수형 계산기 테스트
-    cout << "[IntCalc] 10 + 3 = " << 0 /*TODO*/ << endl;
-    cout << "[IntCalc] 10 - 3 = " << 0 /*TODO*/ << endl;
-    cout << "[IntCalc] 10 * 3 = " << 0 /*TODO*/ << endl;
-    cout << "[IntCalc] 10 / 3 = " << 0 /*TODO*/ << endl;
+    cout << "[IntCalc] 10 + 3 = " << IntCalc::add(10,3) << endl;
+    cout << "[IntCalc] 10 - 3 = " << IntCalc::subtract(10,3) << endl;
+    cout << "[IntCalc] 10 * 3 = " << IntCalc::multiply(10,3) << endl;
+    cout << "[IntCalc] 10 / 3 = " << IntCalc::divide(10,3) << endl;
 
-    cout << "[IntCalc] 10.5 + 3.2 = " << 0 /*TODO*/ << endl;
-    cout << "[IntCalc] 10.5 - 3.2 = " << 0 /*TODO*/ << endl;
-    cout << "[IntCalc] 10.5 * 3.2 = " << 0 /*TODO*/ << endl;
-    cout << "[IntCalc] 10.5 / 3.2 = " << 0 /*TODO*/ << endl;
+    cout << "[IntCalc] 10.5 + 3.2 = " << IntCalc::add(10,3) << endl;
+    cout << "[IntCalc] 10.5 - 3.2 = " << IntCalc::subtract(10,3) << endl;
+    cout << "[IntCalc] 10.5 * 3.2 = " << IntCalc::multiply(10,3) << endl;
+    cout << "[IntCalc] 10.5 / 3.2 = " << IntCalc::divide(10,3) << endl;
 
 
     // 실수형 계산기 테스트
-    cout << "[FloatCalc] 10 + 3 = " << 0.0f /*TODO*/ << endl;
-    cout << "[FloatCalc] 10 - 3 = " << 0.0f /*TODO*/ << endl;
-    cout << "[FloatCalc] 10 * 3 = " << 0.0f /*TODO*/ << endl;
-    cout << "[FloatCalc] 10 / 3 = " << 0.0f /*TODO*/ << endl;
+    cout << "[FloatCalc] 10 + 3 = " << FloatCalc::add(10.0f,3.0f) << endl;
+    cout << "[FloatCalc] 10 - 3 = " << FloatCalc::subtract(10.0f,3.0f) << endl;
+    cout << "[FloatCalc] 10 * 3 = " << FloatCalc::multiply(10.0f,3.0f) << endl;
+    cout << "[FloatCalc] 10 / 3 = " << FloatCalc::divide(10.0f,3.0f) << endl;
 
 
-    cout << "[FloatCalc] 10.5 + 3.2 = " << 0.0f /*TODO*/ << endl;
-    cout << "[FloatCalc] 10.5 - 3.2 = " << 0.0f /*TODO*/ << endl;
-    cout << "[FloatCalc] 10.5 * 3.2 = " << 0.0f /*TODO*/ << endl;
-    cout << "[FloatCalc] 10.5 / 3.2 = " << 0.0f /*TODO*/ << endl;
+    cout << "[FloatCalc] 10.5 + 3.2 = " << FloatCalc::add(10.5f,3.2f) << endl;
+    cout << "[FloatCalc] 10.5 - 3.2 = " << FloatCalc::subtract(10.5f,3.2f) << endl;
+    cout << "[FloatCalc] 10.5 * 3.2 = " << FloatCalc::multiply(10.5f,3.2f) << endl;
+    cout << "[FloatCalc] 10.5 / 3.2 = " << FloatCalc::divide(10.5f,3.2f) << endl;
 }
 void doTest1(){
     cout << "---------------------------" << endl;
@@ -108,10 +108,8 @@ void doTest3(){
     std::cout << "Test 3" << std::endl;
 
     /* TODO: homework1.cpp의 addStudent 함수를 homework2-2.h의 addStudent 함수에 맞춰 수정하기 */
-    
-    delete[] students;
-
-    
+    deleteStudent(students, &numOfStudent, 1011);
+    deleteStudent(students, &numOfStudent, 1029);
     printStudentList();
 }
 
