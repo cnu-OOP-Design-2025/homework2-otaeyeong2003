@@ -1,6 +1,7 @@
 #include <iostream>
 #include "homework2-1.h"
 #include "homework2-2.h"
+#include <cstdlib>
 using namespace std;
 
 StudentStruct *students = nullptr;
@@ -138,6 +139,7 @@ void doPointerTest(int select){
             break;
     }
     delete[] students;
+    students = nullptr;
 }
 int main(int argc, char **argv) {
 
