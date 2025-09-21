@@ -1,6 +1,11 @@
 #include <iostream>
+<<<<<<< HEAD
 #include <string.h>
 #include <stdio.h>
+=======
+#include <stdio.h>
+#include <string>
+>>>>>>> ee90d37 (과제 제출)
 #include "homework2-2.h"
 
 void fillStudentRecord(StudentStruct *students, int *numOfStudent) {
