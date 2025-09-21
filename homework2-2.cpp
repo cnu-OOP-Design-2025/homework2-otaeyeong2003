@@ -64,7 +64,7 @@ int findBestStudentInMidterm(StudentStruct* students, int numOfStudent) {
         if (students[i].record.midterm > students[bestIdx].record.midterm) {
             bestIdx = i; }
     }
-    return bestIdx;
+    return students[bestIdx].id;
 }
 
 /* Return student ID */
@@ -74,7 +74,7 @@ int findBestStudentInFinal(StudentStruct* students, int numOfStudent) {
         if (students[i].record.final > students[bestIdx].record.final) {
             bestIdx = i; }
     }
-    return bestIdx;
+    return students[bestIdx].id;
 }
 
 /* Return student ID */
@@ -85,7 +85,7 @@ int findBestStudent(StudentStruct* students, int numOfStudent) {
             students[bestIdx].record.midterm + students[bestIdx].record.final) {
             bestIdx = i; }
     }
-    return bestIdx;
+    return students[bestIdx].id;
 }
 
 /* Return Index */
