@@ -116,7 +116,6 @@ void doTest3(){
 void doPointerTest(int select){
     const int MAX_STUDENTS = 100;
     students = new StudentStruct[MAX_STUDENTS];
-    students = nullptr;
     fillStudentRecord(students, &numOfStudent);
 
     if(students == nullptr)
