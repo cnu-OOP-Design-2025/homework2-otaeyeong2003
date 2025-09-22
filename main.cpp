@@ -30,8 +30,8 @@ void printAverage()
 
     cout << "# of Student: " << numOfStudent << endl;
     cout << "Midterm Average: " << midtermAvg << endl;
-    cout << "Final Average: " << finalAvg << endl;;
-    cout << "Total Average: " << totalAvg << endl;;
+    cout << "Midterm Average: " << finalAvg << endl;;
+    cout << "Midterm Average: " << totalAvg << endl;;
 }
 
 void printStudentList(){
