@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "homework2-2.h"
+#include "homework2-2.h" 
 
 void fillStudentRecord(StudentStruct *students, int *numOfStudent) {
     addStudent(students, numOfStudent, "Alice", 1001, 90.7, 91.0);

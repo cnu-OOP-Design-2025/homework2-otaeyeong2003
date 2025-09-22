@@ -6,7 +6,7 @@ using namespace std;
 
 StudentStruct *students = nullptr;
 int numOfStudent = 0;
-
+ 
 void printBestStudent()
 {
     int bestMidtermId = findBestStudentInMidterm(students, numOfStudent);

@@ -2,7 +2,7 @@
 #pragma once
 
 // 정수형 계산기
-namespace IntCalc {
+namespace IntCalc { 
     int add(int a, int b);
     int subtract(int a, int b);
     int multiply(int a, int b);

@@ -3,7 +3,7 @@
 
 #include <string>
 
-struct StudentRecord {
+struct StudentRecord { 
     float midterm;
     float final;    
     StudentRecord(float midterm, float final): midterm(midterm), final(final) {}
